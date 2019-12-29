@@ -45,6 +45,6 @@ class RevenuesController < ApplicationController
 	
 	private
 		def revenue_params
-			params.require(:revenue).permit(:name, :description)
+			params.require(:revenue).permit(:name, :value, :description)
 		end
 end

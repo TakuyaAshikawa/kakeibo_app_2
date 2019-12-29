@@ -8,6 +8,7 @@
 	<thead>
 		<tr>
 			<th>収入名</th>
+			<th>金額</th>
 			<th>備考</th>
 			<th>操作</th>
 		</tr>
@@ -16,6 +17,7 @@
 		<% @revenues.each do |revenue| %>
 			<tr>
 				<td><%= revenue.name %></td>
+				<td><%= revenue.value %></td>
 				<td><%= revenue.description %></td>
 				<td>
 				<%= link_to "編集", [:edit, revenue] %>
